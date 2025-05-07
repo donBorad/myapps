@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining a Linux Device to Active Directory Domain Controller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            border-bottom: 2px solid #0066cc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 25px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+        }
+        .support-info {
+            background-color: #e6f7ff;
+            border-left: 4px solid #0066cc;
+            padding: 10px 15px;
+            margin-top: 25px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guide: Joining a Linux Device to Active Directory Domain Controller</h1>
+    </header>
+
+    <section>
+        <h2>Prerequisites</h2>
+        <ul>
+            <li>Administrator access on the Linux device</li>
+            <li>Network connectivity to the Domain Controller</li>
+            <li>Required packages installed (details in script)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Steps to Join AD Domain</h2>
+        <ol>
+            <li>
+                <strong>Download the script</strong>
+                <p>Choose one of the following scripts:</p>
+                <ul>
+                    <li><a href="#">Script.sh</a> (Standard implementation)</li>
+                    <li><a href="#">Scripto.sh</a> (Alternative implementation with additional features)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Make the script executable</strong>
+                <pre><code>chmod +x script.sh</code></pre>
+            </li>
+            <li>
+                <strong>Run the script</strong>
+                <pre><code>./script.sh</code></pre>
+            </li>
+            <li>
+                <strong>Verification</strong>
+                <p>After running the script, verify the domain join was successful:</p>
+                <pre><code>id username@domain.com</code></pre>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Troubleshooting</h2>
+        <div class="warning">
+            <p>If you encounter any issues during the process:</p>
+            <ul>
+                <li>Check network connectivity to the domain controller</li>
+                <li>Verify DNS settings are correctly configured</li>
+                <li>Ensure hostname is properly set</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Support</h2>
+        <div class="support-info">
+            <p>For assistance, please contact:</p>
+            <ul>
+                <li><strong>John</strong> (Server Owner)</li>
+                <li><strong>Daniel</strong> (IT Support)</li>
+            </ul>
+            <p>Please provide error logs or specific error messages when requesting support.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><small>Last updated: May 7, 2025</small></p>
+    </footer>
+</body>
+</html>
